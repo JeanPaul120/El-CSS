@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.technocrazed.com/wp-content/uploads/2015/12/black-wallpaper-to-set-as-background-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Zona de texto con opacidad */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con opacidad */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+
+/* Estilo para los íconos */
+.links {
+    margin-top: 20px;
+}
+
+/* Sprite para los íconos de Nivel 2 y Imágenes */
+.icon {
+    width: 50px;
+    height: 50px;
+    background-image: url('https://avant2.es/wp-content/uploads/2020/02/icono-web.png'); /* Imagen del sprite */
+    background-size: cover; /* Asegura que el sprite se ajuste correctamente */
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Icono para Nivel 2 */
+.icon.nivel2 {
+    background-position: 0 0; /* Muestra el primer ícono en el sprite */
+}
+
+/* Icono para Imágenes */
+.icon.imagenes {
+    background-position: -50px 0; /* Muestra el segundo ícono en el sprite */
+}
+
+/* CSS para la página secundaria Nivel 2 */
+.nivel2-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagen1 {
+    z-index: 1;
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    position: absolute;
+    right: 65%;
+    top: 50%;
+}
+
+.imagen2 {
+    z-index: 1;
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+    border: 2px solid #666;
+    border-radius: 8px;
+}
+
+.nivel2-container img:first-of-type {
+    position: absolute;
+    z-index: 1;
+    width: 80%;
+    height: auto;
+}
+
+.nivel2-container h1 {
+    position: absolute;
+    top: 5%;
+    z-index: 2;
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.nivel2-container p {
+    position: absolute;
+    top: 20%;
+    z-index: 3;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* CSS para la galería de imágenes */
+
+.Avion {
+    color: #ffffff;
+}
+.Niños {
+    color: #ffffff;
+}
+.Hombre {
+    color: #ffffff;
+}
+
+.pitbull {
+    color: #ffffff;
+}
+
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.gallery div {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
